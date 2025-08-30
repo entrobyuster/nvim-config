@@ -1,0 +1,15 @@
+C:\Users\paha\AppData\Local\nvim\GetLayoutApp\bin\Release\net9.0\GetLayoutApp.exe
+C:\Users\paha\AppData\Local\nvim\GetLayoutApp\bin\Release\net9.0\GetLayoutApp.deps.json
+C:\Users\paha\AppData\Local\nvim\GetLayoutApp\bin\Release\net9.0\GetLayoutApp.runtimeconfig.json
+C:\Users\paha\AppData\Local\nvim\GetLayoutApp\bin\Release\net9.0\GetLayoutApp.dll
+C:\Users\paha\AppData\Local\nvim\GetLayoutApp\bin\Release\net9.0\GetLayoutApp.pdb
+C:\Users\paha\AppData\Local\nvim\GetLayoutApp\obj\Release\net9.0\GetLayoutApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\paha\AppData\Local\nvim\GetLayoutApp\obj\Release\net9.0\GetLayoutApp.AssemblyInfoInputs.cache
+C:\Users\paha\AppData\Local\nvim\GetLayoutApp\obj\Release\net9.0\GetLayoutApp.AssemblyInfo.cs
+C:\Users\paha\AppData\Local\nvim\GetLayoutApp\obj\Release\net9.0\GetLayoutApp.csproj.CoreCompileInputs.cache
+C:\Users\paha\AppData\Local\nvim\GetLayoutApp\obj\Release\net9.0\GetLayoutApp.sourcelink.json
+C:\Users\paha\AppData\Local\nvim\GetLayoutApp\obj\Release\net9.0\GetLayoutApp.dll
+C:\Users\paha\AppData\Local\nvim\GetLayoutApp\obj\Release\net9.0\refint\GetLayoutApp.dll
+C:\Users\paha\AppData\Local\nvim\GetLayoutApp\obj\Release\net9.0\GetLayoutApp.pdb
+C:\Users\paha\AppData\Local\nvim\GetLayoutApp\obj\Release\net9.0\GetLayoutApp.genruntimeconfig.cache
+C:\Users\paha\AppData\Local\nvim\GetLayoutApp\obj\Release\net9.0\ref\GetLayoutApp.dll

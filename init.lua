@@ -1,39 +1,36 @@
 require("config.lazy")
 require("config.keymaps")
-require("config.keymaps")
 require("config.options")
-require("input_switch").setup()
+require("config.move_lines").setup()
+-- require("oil").setup()
+-- require("input_switchUS").setup()
 
-local input_switch = require("input_switch")
 
-require("lualine").setup({
-  options = {
-    theme = "auto",
-    section_separators = "",
-    component_separators = "",
-  },
-  sections = {
-    lualine_a = { "mode" },
-    lualine_b = { "branch" },
-    lualine_c = {
-      { input_switch.get_current_layout, icon = "" },
-    },
-    lualine_x = { "encoding", "fileformat", "filetype" },
-    lualine_y = { "progress" },
-    lualine_z = { "location" },
-  },
+vim.o.guifont = "FiraCode Nerd Font:h14"
+
+-- Автооткрытие HexEditor для бинарных файлов
+vim.api.nvim_create_autocmd({ "BufReadPost" }, {
+  pattern = { "*.bin", "*.dat", "*.exe", "*.o", "*.so" },
+  callback = function()
+    require("HexEditor").dump()
+  end,
 })
+-- Маппинг для переключения в HexEditor и обратно
+vim.keymap.set("n", "<leader>hx", function()
+  require("HexEditor").toggle()
+end, { desc = "Toggle hex view" })
 
+vim.o.cmdheight = 1
 
-vim.g.mapleader = " "
-vim.g.localleader = ","
+--vim.g.mapleader = " "
+--vim.g.localleader = ","
 
 -- 🎨 Neovide GUI
 if vim.g.neovide then
-  vim.g.neovide_cursor_vfx_mode = "railgun"
-  vim.g.neovide_transparency = 0.9
-  vim.g.neovide_refresh_rate = 60
-  vim.g.neovide_confirm_quit = true
+   vim.g.neovide_cursor_vfx_mode = "railgun"
+   vim.g.neovide_opacity = 0.9
+   vim.g.neovide_refresh_rate = 60
+   vim.g.neovide_confirm_quit = true
 end
 
 -- ⚙️ Общие настройки
@@ -46,9 +43,3 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 vim.opt.scrolloff = 8
 vim.opt.sidescrolloff = 8
-
--- 🚀 Маппинги
--- vim.keymap.set("n", "<Leader>q", ":q<CR>")
--- vim.keymap.set("n", "<Leader>w", ":w<CR>")
--- vim.keymap.set("n", "<Leader>h", ":split<CR>")
--- vim.keymap.set("n", "<Leader>v", ":vsplit<CR>")
