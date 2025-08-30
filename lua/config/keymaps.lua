@@ -30,7 +30,7 @@ map("n", "<F3>", ":w<CR>")      -- сохранить
 map("n", "<F4>", ":q<CR>")      -- выйти
 vim.keymap.set("n", "<S-F4>", ":q!<CR>", { desc = "Выход без сохранения" })
 map("n", "<F5>", function()     -- вручную переключить раскладку
-  vim.fn.system("im-select.exe 1033")
+    vim.fn.system("im-select.exe 1033")
 end)
 
 map("n", "<F6>", ":e ~/decompress.md<CR>") -- открыть протокол
